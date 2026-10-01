@@ -6,32 +6,50 @@
     <title>Matthew Schaedig's portfolio</title>
 </head>
 <body>
-    <h1>Navigation</h1>
-    <div class="table-of-contents">
-    <ul>
-        <li><a href="#hero">Hero</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    </div>
-    <h1 id="hero" aria-labelledby="hero">Matthew is a person making things.</h1>
-    <h2 id="about" aria-labelledby="about">About</h2>
-    <section>
-        <p>I am currerntly a senior at Michigan State University planning to graduate in Games & Interactive Media. I specialize in game design, but have also worked with graphic design and web design in the past. I love creating things, especially with a touch of humor.</p>
-    </section>
-    <h2 id="projects" aria-labelledby="projects">Projects Showcase</h2>
-        <section>
-        <ul>
-        <li><a href="https://budexe.itch.io/">Itch.io builds</a></li>A collection of Unity projects ported to WebGL from MI 231.
-        <li><a href="https://www.artstation.com/matthewschaedig/">Artstation</a></li>A collection of graphic design projects from my classes at LCC.
-        <li><a ></a>Web Design</li>A selection of webpage mockups I've done. All images were created within Adobe Creative Suite products.
-        </ul>
+    <header id="hero">
+        <nav class="table-of-contents" aria-label="Primary">
+            <ul>
+                <li><a href="#hero">Hero</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Matthew is a person making things.</h1>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>I am currently a senior at Michigan State University planning to graduate in Games & Interactive Media. I specialize in game design, but have also worked with graphic design and web design in the past. I love creating things, especially with a touch of humor.</p>
         </section>
-    <h2 id="contact" aria-labelledby="contact">Contact</h2>
-        <section>
-        <p><i>schaed17@msu.edu</i></p>
+
+        <section id="projects">
+            <h2>Projects Showcase</h2>
+            <figure>
+                <img src="game.png" alt="Preview of a Unity WebGL project ported from MI 231" width="480">
+                <figcaption>A sample build from my Itch.io collection.</figcaption>
+            </figure>
+            <ul>
+                <li>
+                    <a href="https://budexe.itch.io/">Itch.io builds</a>
+                    — A collection of Unity projects ported to WebGL from MI 231.
+                </li>
+                <li>
+                    <a href="https://www.artstation.com/matthewschaedig/">Artstation</a>
+                    — A collection of graphic design projects from my classes at LCC.
+                </li>
+                <li>
+                    <a href="https://sites.google.com/msu.edu/matthew-schaedig/web-design"> Web Design</a> — A selection of webpage mockups I've done. All images were created within Adobe Creative Suite products.
+                </li>
+            </ul>
         </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><a href="mailto:schaed17@msu.edu">schaed17@msu.edu</a></p>
+        </section>
+    </main>
 
     <footer>created by Matthew Schaedig</footer>
 </body>
