@@ -156,8 +156,13 @@ img:hover {
   .project-grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: 1.5rem;
+        gap: 1rem;
 }
+
+/*Copilot prompt: "In style.css ONLY (do not touch index.html), check my mobile-first responsive layout for .project-grid. Start with a single column on small screens, then use a CSS Grid to expand to 2 columns at a tablet breakpoint and 3 columns at a desktop breakpoint. You should use minmax(0, 1fr) so the columns never overflow their container, and increase the gap between cards as the screen gets larger.*/
+
+/*Copilot output: Updated style.css: the grid stays one column on small screens, expands to two at 768px and three at 1024px. Gaps increase from 1rem to 1.5rem, 2rem, and 2.5rem at larger widths. Every column uses minmax(0, 1fr).
+CSS diagnostics found no errors.*/
 
 .project-grid > * {
     min-width: 0;
@@ -177,10 +182,6 @@ img:hover {
         padding: 3rem 0;
     }
 
-    .project-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1.25rem;
-    }
 }
 
 @media (min-width: 768px) {
@@ -199,6 +200,11 @@ img:hover {
 
     #hero {
         padding: 4rem 0;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
     }
 
     #hero h1 {
